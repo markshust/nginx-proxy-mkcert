@@ -14,8 +14,6 @@ services:
     image: nginx
     environment:
       - VIRTUAL_HOST=foo.test,bar.test
-    ports:
-      - "80"
     volumes:
       - ./foo:/usr/share/nginx/html
 
@@ -23,7 +21,5 @@ services:
     image: nginx
     environment:
       - VIRTUAL_HOST=baz.test
-    ports:
-      - "80"
     volumes:
       - ./baz:/usr/share/nginx/html
